@@ -6,83 +6,96 @@
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
   <script type="text/javascript" src="DiceGame.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300|Raleway:900" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="DiceGame.css" />
 </head>
-<body>
-  <h1>Dice Game</h1>
-  <div id="click">Click</div>
+  <body>
+    <header id="header">
+      <h1 id="title">Unbeatable Dice Game</h1>
+      <p>Try your luck at rolling double 6's. If you succeed, dinners on me.</p>
+    </header>
 
-  <div class="dice1">
-    <div class="dot"></div>
-  </div>
-  <div class="dice1">
-    <span class="dot d2"></span>
-    <span class="dot d2"></span>
-  </div>
-  <div class="dice1">
-    <div class="dot d3" id="d3-1"></div>
-    <div class="dot d3"></div>
-    <div class="dot d3" id="d3-3"></div>
-  </div>
-  <div class="dice1">
-    <div class="dot d4"></div>
-    <div class="dot d4"></div>
-    <div class="dot d4"></div>
-    <div class="dot d4"></div>
-  </div>
-  <div class="dice1">
-    <div class="dot d5 d5-1"></div>
-    <div class="dot d5 d5-1"></div>
-    <div class="dot d5"></div>
-    <div class="dot d5 d5-2"></div>
-    <div class="dot d5 d5-2"></div>
-  </div>
-  <div class="dice1">
-    <div class="dot d6"></div>
-    <div class="dot d6"></div>
-    <div class="dot d6"></div>
-    <div class="dot d6"></div>
-    <div class="dot d6"></div>
-    <div class="dot d6"></div>
-  </div>
+    <!-- Button for dice roll-->
+    <section id="section">
+      <div id="button">ROLL</div>
+    </section>
 
+    <!-- Coding of Dice and Dots -->
+    <main id="main">
 
-  <div class="dice2">
-    <div class="dot"></div>
-  </div>
-  <div class="dice2">
-    <span class="dot d2"></span>
-    <span class="dot d2"></span>
-  </div>
-  <div class="dice2">
-    <div class="dot d3" id="d3-1"></div>
-    <div class="dot d3"></div>
-    <div class="dot d3" id="d3-3"></div>
-  </div>
-  <div class="dice2">
-    <div class="dot d4"></div>
-    <div class="dot d4"></div>
-    <div class="dot d4"></div>
-    <div class="dot d4"></div>
-  </div>
-  <div class="dice2">
-    <div class="dot d5 d5-1"></div>
-    <div class="dot d5 d5-1"></div>
-    <div class="dot d5"></div>
-    <div class="dot d5 d5-2"></div>
-    <div class="dot d5 d5-2"></div>
-  </div>
-  <div class="dice2">
-    <div class="dot d6"></div>
-    <div class="dot d6"></div>
-    <div class="dot d6"></div>
-    <div class="dot d6"></div>
-    <div class="dot d6"></div>
-    <div class="dot d6"></div>
-  </div>
+      <!-- Dice 1 -->
+      <div class="dice1">
+        <div class="dot"></div>
+      </div>
+      <div class="dice1">
+        <span class="dot d2"></span>
+        <span class="dot d2"></span>
+      </div>
+      <div class="dice1">
+        <div class="dot d3" id="d3-1"></div>
+        <div class="dot d3"></div>
+        <div class="dot d3" id="d3-3"></div>
+      </div>
+      <div class="dice1">
+        <div class="dot d4"></div>
+        <div class="dot d4"></div>
+        <div class="dot d4"></div>
+        <div class="dot d4"></div>
+      </div>
+      <div class="dice1">
+        <div class="dot d5 d5-1"></div>
+        <div class="dot d5 d5-1"></div>
+        <div class="dot d5"></div>
+        <div class="dot d5 d5-2"></div>
+        <div class="dot d5 d5-2"></div>
+      </div>
+      <div class="dice1">
+        <div class="dot d6"></div>
+        <div class="dot d6"></div>
+        <div class="dot d6"></div>
+        <div class="dot d6"></div>
+        <div class="dot d6"></div>
+        <div class="dot d6"></div>
+      </div>
 
-  <div id="output1"></div>
-  <div id="output2"></div>
+      <!-- Dice2 -->
+      <div class="dice2">
+        <div class="dot"></div>
+      </div>
+      <div class="dice2">
+        <span class="dot d2"></span>
+        <span class="dot d2"></span>
+      </div>
+      <div class="dice2">
+        <div class="dot d3" id="d3-1"></div>
+        <div class="dot d3"></div>
+        <div class="dot d3" id="d3-3"></div>
+      </div>
+      <div class="dice2">
+        <div class="dot d4"></div>
+        <div class="dot d4"></div>
+        <div class="dot d4"></div>
+        <div class="dot d4"></div>
+      </div>
+      <div class="dice2">
+        <div class="dot d5 d5-1"></div>
+        <div class="dot d5 d5-1"></div>
+        <div class="dot d5"></div>
+        <div class="dot d5 d5-2"></div>
+        <div class="dot d5 d5-2"></div>
+      </div>
+      <div class="dice2">
+        <div class="dot d6"></div>
+        <div class="dot d6"></div>
+        <div class="dot d6"></div>
+        <div class="dot d6"></div>
+        <div class="dot d6"></div>
+        <div class="dot d6"></div>
+      </div>
 
-</body>
+      <!-- <div id="output1"></div>
+      <div id="output2"></div> -->
+      <div id="errorMssg"></div>
+    </main>
+  </body>
 </html>

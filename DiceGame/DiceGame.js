@@ -7,16 +7,19 @@
 $(document).ready(function(){
 
   function randomNum() {
+    //Create two random numbers
     var num1 = Math.floor((Math.random() * 6) +1);
-    var num2 = Math.floor((Math.random() * 5) +1);
+    var num2 = Math.floor((Math.random() * 6) +1);
 
-//Assign the numbers to the outputs
-    $("#output1").html(num1);
-    $("#output2").html(num2);
+  //Assign the numbers to the outputs
+    // $("#output1").html(num1);
+    // $("#output2").html(num2);
 
-//Capture all the dice into a variable (array of dice classes)
+  //Capture all the dice into a variable (array of dice classes)
   var allDice1 = document.querySelectorAll(".dice1");
   var allDice2 = document.querySelectorAll(".dice2");
+  //Error Message
+  var error = "Sorry, try again.";
   console.log(allDice1);
   console.log(allDice2);
 
@@ -30,6 +33,7 @@ $(document).ready(function(){
     //Random number generated is from 1-6, loop and arrray have a 0 index - hence num1/num2-1.
     if(num1-1 === i) {
       allDice1[i].style.display = "block";
+      allDice1[i].style.marginBottom = "20px";
     }
   }
 
@@ -43,12 +47,18 @@ $(document).ready(function(){
     }
   }
 
+  //Error Message Display
+  if (num1+num2 != 12) {
+    $("#errorMssg").html(error);
   }
 
-$("#click").on("click", function(){
+  }
+
+$("#button").on("click", function(){
   randomNum();
 })
 
-
-
+$("#button").on("mouseover", function(){
+  $(this).css("cursor", "pointer");
+})
 })

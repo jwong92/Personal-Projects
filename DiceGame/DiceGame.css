@@ -1,7 +1,11 @@
 /***********
 A. DEFAULT
 B. USE EVERYWHERE
-C. DOTS
+C. CENTERING
+D. DOTS
+E. ROLL BUTTON
+F. TITLE
+G. ERROR MESSAGE
 ************/
 
 /*A. DEFAULT*/
@@ -13,6 +17,26 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
+
+body {
+  font-size: 10px;
+  font-family: 'Oswald', sans-serif;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+/*C. CENTERING*/
+#header{
+  flex: 1 0 0;
+  text-align: center;
+  font-size: 3em;
+}
+
+#main {
+  order: 3;
+}
+
 
 /*B. USE EVERYWHERE*/
 
@@ -42,7 +66,7 @@ html {
   background-color: #000;
 }
 
-/*C. DOTS*/
+/*D. DOTS*/
 
 /*Dot 2*/
 
@@ -94,4 +118,26 @@ html {
   top: 25px;
   display: inline-block;
   margin-left: 25px;
+}
+
+/*E. ROLL BUTTON*/
+#button {
+  border: 1px solid black;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  width: 10em;
+  text-align: center;
+  background-color: lavender;
+  font-size: 2em;
+}
+
+/*F. TITLE*/
+#title {
+  font-family: 'Raleway', sans-serif;
+}
+
+/*G. ERROR MESSAGE*/
+#errorMssg{
+  text-align: center;
+  font-size: 2em;
 }
