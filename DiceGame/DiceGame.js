@@ -1,4 +1,4 @@
-//JavaScript Dice Game (Rigged)
+//Rigges JavaScript Dice Game
 
 //Idea of game is to roll double 12
 

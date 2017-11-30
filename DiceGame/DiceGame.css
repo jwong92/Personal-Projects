@@ -1,11 +1,11 @@
 /***********
-A. Default
-B. Use Everywhere
-
+A. DEFAULT
+B. USE EVERYWHERE
+C. DOTS
 ************/
 
 
-/*A. Default*/
+/*A. DEFAULT*/
 
 html {
   box-sizing: border-box;
@@ -15,7 +15,7 @@ html {
   box-sizing: inherit;
 }
 
-/*B. Use Everywhere*/
+/*B. USE EVERYWHERE*/
 
 .dice1 {
   border: 1px solid black;
@@ -42,6 +42,8 @@ html {
   top: 45px;
   background-color: #000;
 }
+
+/*C. DOTS*/
 
 /*Dot 2*/
 
