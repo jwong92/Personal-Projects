@@ -15,43 +15,50 @@ $(document).ready(function(){
     // $("#output1").html(num1);
     // $("#output2").html(num2);
 
-  //Capture all the dice into a variable (array of dice classes)
-  var allDice1 = document.querySelectorAll(".dice1");
-  var allDice2 = document.querySelectorAll(".dice2");
-  //Error Message
-  var error = "Sorry, try again.";
-  console.log(allDice1);
-  console.log(allDice2);
-
-//Loop through each dice
-  //Dice1
-  for (var i=0; i<allDice1.length; i++) {
-    //Clear the dice on the page
-    allDice1[i].style.display = "none";
-
-    //if random number is equal to the number in the loop, then display that number in the array to the block.
-    //Random number generated is from 1-6, loop and arrray have a 0 index - hence num1/num2-1.
-    if(num1-1 === i) {
-      allDice1[i].style.display = "block";
-      allDice1[i].style.marginBottom = "20px";
+    if (num1+num2 === 12) {
+      num1 = Math.floor((Math.random() * 6) +1);
+      num2 = Math.floor((Math.random() * 6) +1);
     }
-  }
 
-  //Dice2
-  for (var i=0; i<allDice2.length; i++) {
-    //Clear the dice on the page
-    allDice2[i].style.display = "none";
+    else {
 
-    if (num2-1 === i) {
-      allDice2[i].style.display = "block";
+      //Capture all the dice into a variable (array of dice classes)
+      var allDice1 = document.querySelectorAll(".dice1");
+      var allDice2 = document.querySelectorAll(".dice2");
+      //Error Message
+      var error = "Sorry, try again.";
+      console.log(allDice1);
+      console.log(allDice2);
+
+    //Loop through each dice
+      //Dice1
+      for (var i=0; i<allDice1.length; i++) {
+        //Clear the dice on the page
+        allDice1[i].style.display = "none";
+
+        //if random number is equal to the number in the loop, then display that number in the array to the block.
+        //Random number generated is from 1-6, loop and arrray have a 0 index - hence num1/num2-1.
+        if(num1-1 === i) {
+          allDice1[i].style.display = "block";
+          allDice1[i].style.marginBottom = "20px";
+        }
+      }
+
+      //Dice2
+      for (var i=0; i<allDice2.length; i++) {
+        //Clear the dice on the page
+        allDice2[i].style.display = "none";
+
+        if (num2-1 === i) {
+          allDice2[i].style.display = "block";
+        }
+      }
+
+      //Error Message Display
+      if (num1+num2 != 12) {
+        $("#errorMssg").html(error);
+      }
     }
-  }
-
-  //Error Message Display
-  if (num1+num2 != 12) {
-    $("#errorMssg").html(error);
-  }
-
   }
 
 $("#button").on("click", function(){
