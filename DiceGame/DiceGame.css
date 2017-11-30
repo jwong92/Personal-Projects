@@ -1,0 +1,96 @@
+/***********
+A. Default
+B. Use Everywhere
+
+************/
+
+
+/*A. Default*/
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/*B. Use Everywhere*/
+
+.dice1 {
+  border: 1px solid black;
+  height: 100px;
+  width: 100px;
+  display: none;
+}
+
+.dice2 {
+  border: 1px solid black;
+  height: 100px;
+  width: 100px;
+  display: none;
+}
+
+.dot {
+  display: block;
+  margin: 0 auto;
+  height: 10px;
+  width: 10px;
+  border: 1px solid black;
+  border-radius: 50px;
+  position: relative;
+  top: 45px;
+  background-color: #000;
+}
+
+/*Dot 2*/
+
+.d2 {
+  display: inline-block;
+  margin-left:25px;
+}
+
+/*Dot3*/
+
+.d3 {
+  position: relative;
+  top: 35px;
+}
+
+#d3-1 {
+  margin-left: 25px;
+}
+
+#d3-3 {
+  margin-right: 25px;
+}
+
+/*Dot4*/
+
+.d4 {
+  position: relative;
+  top: 35px;
+  display: inline-block;
+  margin-left: 25px;
+}
+
+/*Dot5*/
+
+.d5-1, .d5-2 {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+.d5 {
+  position: relative;
+  top: 25px;
+}
+
+/*Dot6*/
+
+.d6 {
+  position: relative;
+  top: 25px;
+  display: inline-block;
+  margin-left: 25px;
+}
