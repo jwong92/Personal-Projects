@@ -1,0 +1,28 @@
+/*LAUNCHER*/
+
+#box {
+  border: 1px solid black;
+  height: 500px;
+  position: relative;
+}
+
+#ball {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: lightgreen;
+  position: absolute;
+  bottom: 0;
+  opacity: 1;
+  transition: all 4s;
+}
+
+#launcher {
+  width: 10px;
+  height: 0px;
+  background-color: grey;
+  transition: all 1s;
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+}
